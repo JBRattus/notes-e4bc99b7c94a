@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<title>Heating replacement findings</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* layout: one readable column, large type for older eyes, tables turn into stacked cards on phones */
+:root {
+  --bg: #f8fafb;
+  --fg: #1c2530;
+  --muted: #55636f;
+  --accent: #1f5f7a;
+  --tint: #e8f0f4;
+  --rule: #cdd8df;
+  --note-bg: #fff4dc;
+  --note-fg: #5c3d00;
+  --font: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12181d; --fg: #e6ebef; --muted: #a2b0ba; --accent: #86c4df;
+    --tint: #1b2830; --rule: #2f3d47; --note-bg: #2f2713; --note-fg: #f0d9a0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12181d; --fg: #e6ebef; --muted: #a2b0ba; --accent: #86c4df;
+  --tint: #1b2830; --rule: #2f3d47; --note-bg: #2f2713; --note-fg: #f0d9a0;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font); font-size: 18px; line-height: 1.6;
+  padding-block: 2rem 4rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 44rem; margin: 0 auto; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.25rem 0 0.75rem; text-wrap: balance; }
+h2 { font-size: 1.5rem; line-height: 1.25; margin: 2.75rem 0 0.75rem; padding-top: 1rem; border-top: 2px solid var(--accent); text-wrap: balance; }
+h3 { font-size: 1.15rem; margin: 1.75rem 0 0.4rem; }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+li { margin-bottom: 0.45rem; }
+a { color: var(--accent); }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.eyebrow { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.jump { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; font-size: 0.95rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+.jump li { margin: 0; }
+.summary { background: var(--tint); border: 1px solid var(--rule); padding: 1.1rem 1.25rem 0.4rem; margin: 1.5rem 0; }
+.summary h2 { margin: 0 0 0.6rem; padding: 0; border: 0; font-size: 1.25rem; }
+.note { background: var(--note-bg); color: var(--note-fg); padding: 0.9rem 1.1rem 0.1rem; margin: 1.25rem 0; border: 1px solid var(--rule); }
+.tw { overflow-x: auto; margin: 0 0 1.25rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; line-height: 1.45; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--rule); }
+thead th { background: var(--tint); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+td.rowhead { font-weight: 700; }
+.num { font-variant-numeric: tabular-nums; }
+.small { font-size: 0.9rem; color: var(--muted); }
+@media (max-width: 40rem) {
+  body { font-size: 17px; }
+  h1 { font-size: 1.65rem; }
+  h2 { font-size: 1.35rem; }
+  table.stack, table.stack tbody, table.stack tr, table.stack td { display: block; width: 100%; }
+  table.stack thead { display: none; }
+  table.stack tr { border: 1px solid var(--rule); margin-bottom: 0.8rem; padding-bottom: 0.2rem; }
+  table.stack td { border: 0; padding: 0.35rem 0.85rem; }
+  table.stack td[data-label]::before { content: attr(data-label); display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  table.stack td.rowhead { background: var(--tint); padding-top: 0.5rem; padding-bottom: 0.5rem; }
+}
+</style>
+
+<main>
+<p class="eyebrow">Updated 10 November 2026</p>
+<h1>Replacing the heating and hot water</h1>
+<p>Everything I found, in plain English. The short version is first, then the detail behind it. Nothing has been ordered, and I have not rung any installers or asked for quotes. Prices are my estimates from published price guides unless I say otherwise.</p>
+
+<ul class="jump" aria-label="Jump to a section">
+  <li><a href="#shower">The shower</a></li>
+  <li><a href="#now">What the house has now</a></li>
+  <li><a href="#options">The three options</a></li>
+  <li><a href="#why">Which way I lean</a></li>
+  <li><a href="#mains">Water supply test</a></li>
+  <li><a href="#cost">Cost</a></li>
+  <li><a href="#time">Timing</a></li>
+  <li><a href="#ring">Who to ring</a></li>
+  <li><a href="#questions">Questions</a></li>
+  <li><a href="#next">What next</a></li>
+</ul>
+
+<section class="summary" aria-labelledby="short">
+  <h2 id="short">The short version</h2>
+  <p>On cost and simplicity I lean towards a <strong>gas combi boiler</strong>. A combi heats water as it is used, so there is no hot water cylinder and no tanks in the loft, and the landing cupboard becomes storage.</p>
+  <p>The weak point is the <strong>shower</strong>. A combi shower is hot and steady but gentle. It will feel like a step down from the power shower. How much of a step depends on the mains water supply, which nobody has measured yet.</p>
+  <p>My estimate is <strong>about £3,500 to £6,000</strong> for a straightforward combi job, including a new shower, and up to about £9,000 if it turns out to be complicated. The work takes about two days, a little longer if the boiler has to move.</p>
+  <p>Two checks decide most of it: the <a href="#mains">bucket test</a> on the mains water, and whether the gas pipe to the boiler is big enough.</p>
+</section>
+
+<h2 id="shower">The shower: what to expect</h2>
+<p>The present shower will almost certainly have to be replaced, whichever option is chosen. A power shower has a pump designed to draw from a loft tank. Triton, one of the main makers, says its power showers must be fed from a tank and cannot be connected to mains pressure. Once the tanks are gone there is nothing for the pump to draw from, and a pump must not be fitted to a combi's supply either.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>If the shower is</th><th>Then</th></tr></thead>
+<tbody>
+<tr><td>A power shower with the pump built into the unit on the wall</td><td>It cannot be used.</td></tr>
+<tr><td>A mixer shower with a separate pump hidden elsewhere</td><td>The pump goes. The mixer itself might be reusable if it is rated for mains pressure, which the model number will show.</td></tr>
+<tr><td>An electric shower, which heats its own water</td><td>It would carry on working, since it only needs cold mains. Electric showers are weak though, at 2 to 5 litres a minute.</td></tr>
+</tbody></table></div>
+<h3>How a new shower will feel compared with now</h3>
+<p>A power shower boosts the flow with a pump, so it is probably more forceful than anything fed straight from the mains. Moving to mains water means a different shower, however it is done.</p>
+<ul>
+  <li><strong>Combi.</strong> Hot, steady and never runs out, but gentle. A combi can only heat water so fast: about 12 litres a minute from a 30 kW boiler, about 14 from a 35 kW one, and under 10 from a 24 kW one. If you have used a combi shower that was hot but weak, and washing hair took longer, that is the usual reason. It is a flow limit, not a pressure fault.</li>
+  <li><strong>Mains-pressure cylinder.</strong> It has no heating-speed limit, because the hot water is already stored. Shower strength then depends on the mains. If the mains delivers 20 litres a minute or more, the shower can come close to what you have now. If the mains delivers only 12 to 14, the shower will be no stronger than a combi, and you would have given up the cupboard for nothing.</li>
+</ul>
+<p>So the water test matters more than anything else in this note. When installers visit, ask each one what shower flow, in litres a minute, they expect from your measured mains under each option.</p>
+<p>The usual replacement is a thermostatic mixer shower. It needs no pump because the mains provides the pressure, and it holds its temperature steady even when someone runs a tap elsewhere. Fitting one costs roughly £400 to £900 where the tiling and tray can stay, and £800 to £2,000 or more where they have to be redone. A full bathroom refit is typically £3,000 to £8,000 and takes weeks, and it would not make the heating work any sooner. If the bathroom is part of the renovation, a simple shower could go in now and the rest could follow.</p>
+
+<h2 id="now">What the house has now</h2>
+<p>The system is the Ideal iCos HE18 gas boiler in the kitchen cupboard, the green hot water cylinder in the landing cupboard, a pump and a motorised valve beside the cylinder, and two tanks in the loft. The large tank feeds the hot water. The small one keeps the radiators topped up. Hot water pressure comes only from the height of the loft tank, which is why the shower needs a pump.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Part</th><th>What I know</th><th>Still to check</th></tr></thead>
+<tbody>
+<tr><td>Boiler</td><td>Ideal iCos HE18. It heats the radiators and the cylinder but does not make hot water directly. The model is no longer made. Going by when it was sold, it is probably 16 to 22 years old. Ideal says boilers of this type generally last 15 to 20 years.</td><td>The serial number on the data plate gives the exact age.</td></tr>
+<tr><td>Cylinder</td><td>Probably about 115 to 120 litres, judging by its height. It has an electric immersion heater on a timer. There is rust staining near the top.</td><td>What actually leaked: the cylinder, a pipe joint beside it, or the heating coil inside it. BSK may have told you.</td></tr>
+<tr><td>Pump and valve</td><td>Both look newer than the boiler. The valve carries a 2019 date code.</td><td>Nothing. They are removed under a combi.</td></tr>
+<tr><td>Loft tanks</td><td>Two, both empty at present.</td><td>What they are made of. Older tanks are occasionally asbestos cement, which must not be cut up or broken.</td></tr>
+<tr><td>Shower</td><td>A power shower.</td><td>The make and model.</td></tr>
+<tr><td>Cold taps</td><td>They still work with the loft tanks empty, which suggests they are already fed straight from the mains.</td><td>Worth confirming for the upstairs bathroom.</td></tr>
+<tr><td>Mains water</td><td>Not measured.</td><td>Flow and pressure.</td></tr>
+<tr><td>Gas pipe</td><td>Not known.</td><td>Where the meter is, and the size and length of the pipe to the boiler.</td></tr>
+</tbody></table></div>
+<p>For a full replacement it hardly matters which part leaked, because the cylinder and its pipework all go. It is still worth asking BSK to put what they found in writing, for the insurance and for whoever does the new work.</p>
+
+<h2 id="options">The three options</h2>
+<h3>A combi boiler</h3>
+<p>One wall-hung gas boiler does everything. It heats the radiators, and when a hot tap is opened it heats mains water on its way through. The cylinder, both loft tanks, the pump and the valve are all removed, and the airing cupboard is empty afterwards.</p>
+<p>Boiler sizes are given in kW, which is the boiler's power. A bigger number means more hot water at once. The flow figures above are the makers' figures for heating the water by 35 degrees, roughly from a cold winter mains to a hot shower. The limit is that the whole house shares that flow. If someone runs a hot tap while another person is in the shower, the shower weakens until the tap is off. A thermostatic shower keeps the temperature steady while that happens. Baths fill more slowly than they would from a cylinder. If the boiler breaks down there is no heating and no hot water until it is repaired.</p>
+<h3>A boiler with a mains-pressure cylinder</h3>
+<p>A new gas boiler heats the radiators and a new hot water cylinder in the landing cupboard. Unlike the present cylinder, the new one is fed directly from the mains, so it needs no loft tank and gives mains pressure at every hot tap. Plumbers call this an unvented cylinder, and you will see that word on quotes.</p>
+<p>It suits houses where several people want hot water at once, because it has 180 to 210 litres stored and ready. Makers' sizing guides suggest about 210 litres for four people. A cylinder that size is about 1.5 metres tall and 58 cm across, and weighs up to about 250 kg when full, so it is a good deal bigger than the present one. Once the stored water is used, it takes roughly 20 to 35 minutes to reheat.</p>
+<p>It has an electric immersion heater, so there is still hot water if the boiler fails. The heating would still be off. The immersion heater costs about three times as much to run as gas, so it is a backup and nothing more. The stored water loses a little heat all day, roughly £50 a year on the makers' figures. The cylinder also has safety valves that need checking periodically, and some makers make a yearly check a condition of the guarantee.</p>
+<h3>A heat pump with a cylinder</h3>
+<p>An electric unit outside the house takes heat from the air and uses it to warm the radiators and a hot water cylinder. It replaces the gas boiler entirely. Heat pumps run the radiators cooler than a boiler does, so some radiators usually have to be replaced with larger ones. One survey of installers found this was needed in about seven homes in ten, with six radiators changed on average.</p>
+<p>It needs a cylinder, usually a larger one than a gas boiler would use, so the airing cupboard stays in use. Most of the hot water is heated by the heat pump itself. Some systems also use an immersion heater for a weekly high-temperature cycle that guards against bacteria in the stored water. Makers of the newer models say theirs reach that temperature without one, though some owners report otherwise. Any installer should say in writing whether their design relies on the immersion heater and how often.</p>
+<p>There is a government grant of £7,500, called the Boiler Upgrade Scheme, and no VAT on heat pump installation until 31 March 2027. The grant rules are under <a href="#rules">the rules and guarantees</a>.</p>
+
+<h3>Side by side</h3>
+<div class="tw"><table class="stack">
+<thead><tr><th></th><th>Combi</th><th>Boiler + cylinder</th><th>Heat pump + cylinder</th></tr></thead>
+<tbody>
+<tr><td>One shower at a time</td><td>Hot and steady, never runs out. Gentler than a power shower.</td><td>As strong as the mains allows. Better than a combi only if the mains is good.</td><td>As the cylinder option.</td></tr>
+<tr><td>Shower while a hot tap runs</td><td>Shower weakens.</td><td>Copes better.</td><td>Copes better.</td></tr>
+<tr><td>Several showers in a row</td><td>No limit.</td><td>Limited by what is stored, then a wait to reheat.</td><td>Same, with a longer wait.</td></tr>
+<tr><td>Filling a bath</td><td>Slower.</td><td>Faster.</td><td>Faster.</td></tr>
+<tr><td>Airing cupboard</td><td>Freed.</td><td>Used, by a bigger cylinder than now.</td><td>Used.</td></tr>
+<tr><td>If the boiler or heat pump fails</td><td>No heating, no hot water.</td><td>No heating. Hot water from the immersion heater.</td><td>No heating. Hot water from the immersion heater.</td></tr>
+<tr><td>Radiators</td><td>Kept.</td><td>Kept.</td><td>Several probably replaced.</td></tr>
+<tr><td>Yearly upkeep</td><td>Boiler service.</td><td>Boiler service and cylinder check.</td><td>Service.</td></tr>
+<tr><td>Rough cost</td><td class="num">£3,500 to £6,000</td><td class="num">£5,000 to £8,000</td><td class="num">£5,000 to £11,000 after the grant</td></tr>
+<tr><td>How soon</td><td>Quickest.</td><td>A little slower.</td><td>Slowest.</td></tr>
+</tbody></table></div>
+
+<h2 id="why">Which way I lean, and why</h2>
+<p>What decides between a combi and a cylinder is how much hot water is wanted at the same moment, not how many people live in the house. In this house showers are rarely taken one after another, and hot water use is spread through the day. A combi handles that comfortably, and a cylinder would spend most of its time holding hot water nobody is using. That is why I lean towards the combi.</p>
+<p>The cylinder would give you four things a combi does not: a stronger shower if the mains is good, a shower that holds up when a tap is run, a faster bath, and hot water if the boiler breaks down. For those you would pay roughly £1,000 to £2,500 more to install it, about £50 a year in lost heat, and most of the airing cupboard. Whether that is good value depends mostly on the first one. If a forceful shower matters a lot to the household, that is a fair reason to choose the cylinder, provided the mains test says it would deliver.</p>
+<p>A cylinder would not make the heating any more dependable. Reliable heating is what matters most, and with either gas option it depends on the boiler. The protection is the same for both: a boiler with a long guarantee, serviced every year, and a couple of electric heaters in reserve.</p>
+<h3>Is one easier to fit?</h3>
+<p>Neither is simple, and each has one awkward job. A combi burns gas faster than the present boiler while it is heating water, so the gas pipe from the meter will probably need replacing with a larger one. It also needs a hot water pipe run from the boiler to join the existing hot pipes, which at the moment all start at the airing cupboard. The cylinder option avoids both of those but needs a new, larger cold water pipe up to the landing and a safety pipe from the cylinder to a drain outside. The combi takes more equipment out of the house and puts less back. With the renovation opening up floors and walls anyway, the pipe runs should be easier for either.</p>
+<h3>And the heat pump?</h3>
+<p>I put it third, for two reasons. It needs a cylinder, so the cupboard is not freed. And it takes longest to arrange: a survey, a design, a grant application and probably new radiators. The only published figure I found for the wait, from one national installer, is 4 to 16 weeks. I do not know what a local firm could manage.</p>
+<p>It does have two things going for it. The renovation makes it much easier, because changing radiators is far less disruptive when rooms are already being worked on. And a gas boiler fitted now should last fifteen years or so, which means that changing to a heat pump in a few years would be paying twice. If a heat pump appeals at all, now is the time to find out. One survey and a firm date, asked for alongside the gas quotes, would settle the timing.</p>
+
+<h2 id="mains">The water supply test</h2>
+<p>With the loft tanks gone, everything depends on what the mains delivers. Three terms come up:</p>
+<ul>
+  <li><strong>Flow</strong> is how much water arrives, in litres a minute.</li>
+  <li><strong>Standing pressure</strong> is the pressure in the pipe when every tap is shut. It usually looks healthy and says little.</li>
+  <li><strong>Working pressure</strong> is the pressure while water is running. This is the figure that matters, and it is always lower than standing pressure.</li>
+</ul>
+<p>Pressure is measured in bar. Water companies are expected to supply about 1 bar at the edge of the property with about 9 litres a minute flowing, which is less than a good shower wants.</p>
+<h3>How to test it</h3>
+<p>Turn the kitchen cold tap fully on and time how long it takes to fill a 10 litre bucket. Thirty seconds means 20 litres a minute. A full minute means 10. Some taps restrict the flow, so an outside tap gives a truer figure if there is one. Do it between 7 and 9 in the morning, when the street is using most water, and again in the middle of the day.</p>
+<p>For pressure, a gauge from a plumbing merchant screws onto an outside tap or a washing machine connection. Read it with all taps shut, then again with the kitchen cold tap running. Write both down.</p>
+<h3>What the result means</h3>
+<div class="tw"><table class="stack">
+<thead><tr><th>Result of the bucket test</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>20 litres a minute or more</td><td>A cylinder could give a shower close to what you have now. A combi still works, but a cylinder would clearly be stronger.</td></tr>
+<tr><td>14 to 20</td><td>A combi will work as it should. A cylinder would be a little stronger at best.</td></tr>
+<tr><td>12 to 14</td><td>A combi will work as it should, and a cylinder would give no stronger shower.</td></tr>
+<tr><td>10 to 12</td><td>A combi will work, but the shower will be on the modest side.</td></tr>
+<tr><td>Below about 10</td><td>Both options would disappoint. The pipe bringing water into the house needs looking at first, and the water company can be asked to test the supply at the boundary.</td></tr>
+</tbody></table></div>
+<p>Cylinder makers quote higher figures. Megaflo asks for 20 litres a minute at 1.5 bar. Vaillant asks for 2 bar and 20 to 25 litres a minute, and says its cylinder still works below that with reduced flow, but should not be fitted at all below 1 bar. Those are what each maker wants for its own product to perform at its best. They are not a pass mark for every cylinder. A combi's requirement depends on the model, and the figures I found ranged from under 1 bar to 1.5 bar, so the installer should go by the manual for the boiler they propose and measure the supply themselves.</p>
+
+<h2 id="radiators">The radiators and the sealed system</h2>
+<p>At present the small loft tank keeps the radiators full and the system runs at low pressure. With that tank gone the heating becomes what is called a sealed system. It is filled from the mains through a valve, and a small pressure vessel takes up the expansion as the water heats. It runs at two to three times the pressure the radiators are used to.</p>
+<p>Most systems take this without trouble. Where there is a weak point it tends to show: a weeping radiator valve, a tired joint, occasionally a pinhole in an old radiator. A careful installer pressure-tests the system before fitting the new boiler, so problems turn up at the start. The allowance for surprises in my estimates is meant to cover a valve or two. A radiator that has to be replaced costs about £150 to £450, fitted, and several of those would take the job above my straightforward figure.</p>
+<p>The building regulations say the system should be cleaned and flushed when a new boiler goes in, and treated with a chemical that stops corrosion. Boiler makers make this a condition of their guarantees, and most also want a magnetic filter fitted, which catches sludge before it reaches the boiler. There are two ways to clean a system: a chemical flush, or a more forceful power flush, which pumps water through at speed. Opinions differ on which suits an older system, so ask each installer which they intend and why.</p>
+<p>The installer needs to reach every radiator. Since the renovation will involve the radiators anyway, any that are due to be changed could be done as part of that. The boiler should not wait for it.</p>
+
+<h2 id="out">What comes out, and what can stay</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th>Item</th><th>What should happen</th></tr></thead>
+<tbody>
+<tr><td>Both loft tanks, with lids and fittings</td><td>Taken out and disposed of. Tested first if there is any doubt about asbestos cement. If positive, a specialist removes them, at roughly £175 to £550.</td></tr>
+<tr><td>Old cylinder, immersion heater and timer</td><td>Removed. The electrical supply to the immersion heater made safe.</td></tr>
+<tr><td>Pump and valve beside the cylinder</td><td>Removed under a combi. The heating pipes are joined straight through.</td></tr>
+<tr><td>Pipes between the loft tanks and the system, and the overflow pipes through the eaves</td><td>Removed where they can be reached. Holes sealed.</td></tr>
+<tr><td>The shower pump and its pipes</td><td>Removed.</td></tr>
+<tr><td>Old pipes buried in walls or under floors</td><td>These can stay, but each should be cut back to where it leaves a pipe still in use and capped there, so no dead length is left full of water. Water that sits in a dead end stagnates, and health guidance is to avoid that.</td></tr>
+<tr><td>Old boiler</td><td>Removed. For a heat pump it must be photographed with its nameplate first, as evidence for the grant.</td></tr>
+</tbody></table></div>
+<p>Ask the installer to list on the invoice anything that was capped and left, and where.</p>
+
+<h2 id="cost">What it should cost</h2>
+<p>Firm published prices for this exact job are scarce, so these are estimates and the ranges are wide on purpose. The published prices I worked from are these:</p>
+<ul>
+  <li>Converting to a combi from a system like this one: £2,500 to £4,500 (MyJobQuote, October 2026); from £2,690 (BOXT); £3,000 to £5,700 (Heatable).</li>
+  <li>A mains-pressure cylinder supplied and fitted, without a boiler: £1,500 to £3,500 (Trade2Base, June 2026).</li>
+  <li>A heat pump: Octopus Energy says its typical customer paid £4,064 after the grant between June and September 2026. It does not say what size of house that covers or whether radiators were included.</li>
+</ul>
+<h3>How the combi estimate is made up</h3>
+<div class="tw"><table>
+<thead><tr><th>Item</th><th>Estimate</th></tr></thead>
+<tbody class="num">
+<tr><td>New boiler, supplied and fitted</td><td>£2,000 to £2,600</td></tr>
+<tr><td>Converting the system: removing the cylinder and both tanks, sealing the heating, altering pipes</td><td>£500 to £900</td></tr>
+<tr><td>Larger gas pipe, if needed</td><td>£250 to £600, more for a long run</td></tr>
+<tr><td>Cleaning and flushing the system</td><td>£300 to £600</td></tr>
+<tr><td>Magnetic filter</td><td>£120 to £250</td></tr>
+<tr><td>Thermostat and controls</td><td>£150 to £300</td></tr>
+<tr><td>Flue and drain connections</td><td>£100 to £400</td></tr>
+<tr><td>Replacement shower, simple swap</td><td>£400 to £900</td></tr>
+<tr><td>Allowance for surprises, such as leaking valves</td><td>10 to 15% on top</td></tr>
+</tbody></table></div>
+<p>Added up line by line, the lowest figures come to a little under £4,000 and the highest to about £7,500. A real job rarely sits at the top of every line, and the published all-in prices above are lower than my line-by-line sums. That is why I give about £3,500 to £6,000 as the likely range for a straightforward job. Treat it as a rough guide.</p>
+<p>VAT at 20% is included, on the assumption that the firm is registered for VAT. Smaller firms with a turnover under £90,000 need not be, and do not charge it.</p>
+<h3>All three options</h3>
+<div class="tw"><table class="stack">
+<thead><tr><th></th><th>Combi</th><th>Boiler + cylinder</th><th>Heat pump, after the £7,500 grant</th></tr></thead>
+<tbody>
+<tr><td>Straightforward job</td><td class="num">about £3,500 to £6,000</td><td class="num">about £5,000 to £8,000</td><td class="num">about £5,000 to £11,000</td></tr>
+<tr><td>Complicated job</td><td class="num">up to about £9,000</td><td class="num">up to about £11,500</td><td>towards the top of that range</td></tr>
+<tr><td>What would make it complicated</td><td>A long gas pipe run, an awkward hot pipe route, moving the flue</td><td>The safety pipe route, the new mains pipe, a cupboard that needs altering</td><td>How many radiators need changing, electrical work</td></tr>
+</tbody></table></div>
+<p>The difference between the combi and the cylinder is the least certain figure here. The simplest way to pin it down is to ask each installer to price both.</p>
+<h3>Running costs</h3>
+<p>Under the current price cap, gas costs about 8p a unit and electricity about 26p. A combi and a boiler with a cylinder cost about the same to run, apart from the £50 or so a year the cylinder loses as heat.</p>
+<p>A heat pump uses expensive electricity but makes about three units of heat from each unit it uses. Whether it beats gas depends on how well it performs once installed. For a typical house, which is not the same as your own bill, gas heating comes to roughly £1,190 a year. A heat pump would cost about £1,080 if it performs modestly and about £760 if it performs very well. A government-funded trial measured the modest figure on average. Systems fitted by specialists and monitored by their owners average closer to the better one. So the saving is somewhere between nothing and about £300 a year, and it should not be assumed. If gas were removed from the house altogether, the gas standing charge of about £108 a year would be saved as well.</p>
+
+<h2 id="time">How long it should take</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th></th><th>Combi</th><th>Boiler + cylinder</th><th>Heat pump</th></tr></thead>
+<tbody>
+<tr><td>Visits and quotes</td><td>Probably 1 to 3 weeks from local firms. Online firms quote in days.</td><td>Probably 1 to 3 weeks. Needs a visit.</td><td>2 to 3 weeks, including the heat loss survey.</td></tr>
+<tr><td>Waiting for a start date</td><td>Not known. No local firm publishes one.</td><td>Not known.</td><td>One national installer says 4 to 16 weeks.</td></tr>
+<tr><td>Work in the house</td><td>About 2 days, a little longer if the boiler moves.</td><td>2 to 3 days.</td><td>2 to 5 days.</td></tr>
+<tr><td>Paperwork afterwards</td><td>Certificates within 30 days.</td><td>The same, plus one for the cylinder.</td><td>Grant application and a notice to the electricity network.</td></tr>
+</tbody></table></div>
+<p>Winter is the busiest time of year for boiler firms, so it is worth ringing round soon. How quickly anyone can start is something only the firms can say.</p>
+<p>If the earliest start turns out to be more than a week or so away, ask the installer or BSK whether the heating can be got going again in the meantime with the cylinder bypassed. It may not be possible here. Otherwise it is electric heaters and showers elsewhere until the work is done.</p>
+
+<h2 id="ring">Who to ring</h2>
+<p>Here are three firms to try. Before anyone comes round, put the firm's Gas Safe number into <a href="https://www.gassaferegister.co.uk" target="_blank" rel="noopener">gassaferegister.co.uk</a>, which takes a minute. I have not done that yet. None of them mentions our village by name, so that is the first thing to ask.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Firm</th><th>What I could confirm</th><th>What I could not</th></tr></thead>
+<tbody>
+<tr><td><strong>Archers Heating &amp; Plumbing Ltd</strong><br>28 Tower Road, Peatmoor, Swindon<br>01793 871558<br><a href="https://archersheating.co.uk" target="_blank" rel="noopener">archersheating.co.uk</a></td><td>A limited company since 2012. Gas Safe number 547506. Registered for VAT. Which? Trusted Trader, rated 5.0 from 23 reviews. Accredited by Worcester Bosch, which usually means longer boiler guarantees. Does bathrooms as well as boilers.</td><td>How long a guarantee they offer. How soon they could start.</td></tr>
+<tr><td><strong>James Rayner Plumbing &amp; Heating</strong><br>Swindon<br>07919 105429</td><td>Gas Safe number 226483. Which? Trusted Trader, rated 5.0 from 21 reviews.</td><td>Whether he takes on full conversions. I think he works on his own. VAT status.</td></tr>
+<tr><td><strong>BSK Plumbing &amp; Heating</strong><br>Swindon</td><td>You know them already, and they know the house. Listed on Checkatrade as Gas Safe registered.</td><td>Their Gas Safe number. Ask for it and check it like the others.</td></tr>
+</tbody></table></div>
+<p>National online firms such as BOXT and Heatable sell combi conversions at a fixed price and can be quick. BOXT's prices start at £2,690 and it gives a one-year guarantee on its workmanship. I could not find a clear statement from either that removing loft tanks is included as standard, so that needs asking before buying. A local firm that visits and measures is the safer choice for a job like this.</p>
+<p>For a heat pump, the one local firm I found is Wiltshire Energy in Royal Wootton Bassett (0333 577 6065). An installer must hold MCS certification for the grant to apply. A manufacturer's directory lists them as having it, but I could not confirm that or the company's details, so check them at <a href="https://mcscertified.com" target="_blank" rel="noopener">mcscertified.com</a> first. Octopus Energy and British Gas also fit heat pumps and will say online whether they cover the postcode.</p>
+
+<h2 id="rules">The rules and guarantees</h2>
+<h3>Required by law</h3>
+<ul>
+  <li>Anyone working on the gas must be on the Gas Safe register. The engineer carries a photo card, and the back of it lists what they are qualified to work on.</li>
+  <li>A new boiler must be reported to the council's building control. Swindon Borough Council is the authority here. A registered installer does this for you, and a Building Regulations certificate should arrive in the post within 30 days.</li>
+  <li>A mains-pressure cylinder needs an installer with a separate qualification for unvented hot water, often called G3. Being Gas Safe registered is not enough by itself. The cylinder must have a visible safety outlet and a pipe to carry any discharge safely outside. This applies to the cylinder and heat pump options only.</li>
+</ul>
+<h3>Expected by the building regulations guidance</h3>
+<ul>
+  <li>A room thermostat and timer with any new boiler.</li>
+  <li>With a combi, one extra energy-saving measure. A smart thermostat or a control that adjusts to the weather outside both count.</li>
+  <li>The system cleaned, flushed and treated when the boiler is changed.</li>
+</ul>
+<h3>Conditions of the guarantees</h3>
+<p>Boiler guarantees run from about 5 to 10 years or more, depending on the make and on who fits it. The longest ones are only available through installers accredited by the maker. Worcester Bosch, for example, asks for the boiler to be registered within 30 days, the system to be flushed, one of its own filters to be fitted, and a service every year. Ask each firm for the length of the guarantee and what you must do to keep it valid, and get it in writing with the quote.</p>
+<h3>For a heat pump only</h3>
+<ul>
+  <li>The grant is £7,500. The installer applies for it and takes it off the bill. The voucher lasts three months. Since April 2026 no energy certificate for the house has been needed.</li>
+  <li>The heat pump must replace the gas boiler completely. A heat pump working alongside a gas boiler does not qualify.</li>
+  <li>Planning permission is not normally needed. The rules are stricter inside a conservation area. There is a conservation area in the village, and the council can say whether our road is inside it.</li>
+  <li>The installer must tell the electricity network, and may need its approval first if the supply to the house is limited.</li>
+</ul>
+
+<h2 id="questions">Questions that could change the choice</h2>
+<p>These are for the household to answer. Any of them could tip the decision.</p>
+<ul>
+  <li>How much does a forceful shower matter, compared with getting the landing cupboard back?</li>
+  <li>Will the renovation add a second shower, downstairs for instance? Two showers that might run at the same time is the strongest reason to choose a cylinder.</li>
+  <li>Does anyone take baths often enough for a slower fill to be a nuisance?</li>
+  <li>How much would it matter if the shower weakened for a moment when someone ran a hot tap?</li>
+  <li>Would you pay the extra for a cylinder to have hot water during a boiler breakdown?</li>
+  <li>Is the boiler staying where it is, or will the renovation move the kitchen?</li>
+  <li>Does anything else in the house use gas, such as a hob or a fire?</li>
+  <li>If a heat pump were chosen, how long could you manage with temporary heating?</li>
+</ul>
+
+<h2 id="ask">What to ask each installer</h2>
+<ol>
+  <li>Do you cover our area, and when could you start?</li>
+  <li>What is your Gas Safe number?</li>
+  <li>Will you measure the mains flow and pressure when you visit, and write the figures on the quote?</li>
+  <li>What shower flow, in litres a minute, do you expect from our mains with a combi, and with a cylinder?</li>
+  <li>Is the gas pipe big enough for the boiler you propose? If not, what will a new one cost and where will it run?</li>
+  <li>Which boiler, and what size? Can it run gently for the heating while still giving 30 to 35 kW for hot water?</li>
+  <li>How will the boiler's hot water be joined to the existing hot pipes?</li>
+  <li>Does the price include removing and disposing of both loft tanks, the cylinder, the old boiler, and the pump and valve?</li>
+  <li>Which old pipes will you remove, and which will be capped?</li>
+  <li>How will you clean the system? Will you pressure-test the radiators first? What do you charge per radiator or valve if any leak?</li>
+  <li>Is the water here hard enough to need a limescale reducer on the boiler?</li>
+  <li>Is the new shower included, and which one?</li>
+  <li>How long are the guarantees on the boiler and on your own work, and what keeps them valid?</li>
+  <li>Is VAT included in the price?</li>
+  <li>Which certificates will we get, and when?</li>
+  <li>What would the same job cost with a boiler and a mains-pressure cylinder instead?</li>
+</ol>
+
+<h2 id="insurance">Insurance</h2>
+<p>I would not count on the insurance paying towards the replacement. I looked at the home emergency leaflet Allianz publishes for 2026. Your own policy may be worded differently, so please check it.</p>
+<ul>
+  <li>It pays for emergency repairs up to £1,000 for each emergency.</li>
+  <li>It specifically excludes the cost of replacing cylinders, water tanks, showers and radiators.</li>
+  <li>It offers £500 towards a new boiler, but only where the boiler itself cannot be economically repaired and has been serviced within the last three years. Here the fault is at the cylinder or its pipework, so I doubt this applies.</li>
+  <li>It allows up to £250 for somewhere else to stay if the house is unfit to live in.</li>
+</ul>
+<p>It would be sensible to tell Allianz what is planned before ordering anything.</p>
+
+<h2 id="next">What I would do next</h2>
+<ol>
+  <li>Do the bucket test, and find the gas meter.</li>
+  <li>Talk through the questions above, the shower and the cupboard especially.</li>
+  <li>Ring Archers, James Rayner and BSK for a visit and an itemised quote for a combi, with the cylinder version priced alongside and the expected shower flow stated for each.</li>
+  <li>If a heat pump is of any interest, ask one firm for a survey and their earliest date at the same time.</li>
+  <li>Check each firm's Gas Safe number online.</li>
+  <li>Compare the quotes against the questions above and the prices in this note.</li>
+</ol>
+
+<h3>Where the figures come from</h3>
+<p class="small">Boiler and cylinder performance figures are from the makers' own technical sheets: Ideal, Worcester Bosch, Vaillant and Megaflo. The rules are from the government's Approved Documents G and L, and from Ofgem's guidance on the Boiler Upgrade Scheme. Energy prices are Ofgem's price cap for October to December 2026. Prices for the work are from MyJobQuote, BOXT, Heatable, Trade2Base, Checkatrade and Octopus Energy. Details of the firms are from their own websites, Companies House and Which? Trusted Traders.</p>
+</main>
+
+<script>
+/* tags: heating-findings-page, table-stack-labels */
+document.querySelectorAll("table.stack").forEach(function (t) {
+  var heads = Array.prototype.map.call(t.querySelectorAll("thead th"), function (th) { return th.textContent.trim(); });
+  t.querySelectorAll("tbody tr").forEach(function (tr) {
+    Array.prototype.forEach.call(tr.children, function (td, i) {
+      if (heads[i]) { td.setAttribute("data-label", heads[i]); }
+      else { td.classList.add("rowhead"); }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
